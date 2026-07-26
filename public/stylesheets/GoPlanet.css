@@ -1,0 +1,1521 @@
+/* ================================================= */
+/* ================= CONFIG GENERAL ================ */
+/* ================================================= */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url("https://images.pexels.com/photos/17569943/pexels-photo-17569943.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+}
+
+
+/* ========================= */
+/* TEXTOS GENERALES */
+/* ========================= */
+
+p{
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+}
+
+
+/* ================================================= */
+/* ==================== ALERTA ===================== */
+/* ================================================= */
+
+
+/* ========================= */
+/* CONTENEDOR */
+/* ========================= */
+
+.promo-alerta{
+    background-color: rgba(255,255,255,0.75);
+    backdrop-filter: blur(6px);
+    color: rgb(33,33,33);
+    padding: 10px 0;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}
+
+
+/* ========================= */
+/* TEXTO */
+/* ========================= */
+
+.promo-alerta span{
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+    animation: rebote 6s linear infinite alternate;
+}
+
+
+/* ========================= */
+/* ANIMACION */
+/* ========================= */
+
+@keyframes rebote{
+
+    from{
+        left: -35%;
+    }
+
+    to{
+        left: 35%;
+    }
+
+}
+
+
+/* ================================================= */
+/* ==================== NAVBAR ===================== */
+/* ================================================= */
+
+
+/* ========================= */
+/* CONTENEDOR */
+/* ========================= */
+
+.navbar{
+    padding: 15px 30px;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    z-index: 1000;
+}
+
+
+/* ========================= */
+/* LOGO */
+/* ========================= */
+
+.navbar-brand{
+    font-family: "Alfa Slab One", serif;
+    font-size: 35px;
+    color: white !important;
+    font-weight: 1000;
+    transition: 0.3s;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+
+/* ========================= */
+/* LINKS */
+/* ========================= */
+
+.nav-link{
+    color: white !important;
+    transition: 0.3s;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+
+/* ========================= */
+/* HOVER */
+/* ========================= */
+
+.navbar-brand:hover,
+.nav-link:hover{
+    opacity: 0.7;
+}
+
+
+/* ================================================= */
+/* =================== DROPDOWN ==================== */
+/* ================================================= */
+
+
+/* ========================= */
+/* MENU */
+/* ========================= */
+
+.dropdown-menu{
+    border-radius: 15px;
+    border: none;
+    overflow: hidden;
+}
+
+
+/* ========================= */
+/* ITEMS */
+/* ========================= */
+
+.dropdown-item{
+    transition: 0.3s;
+}
+
+
+/* ========================= */
+/* HOVER */
+/* ========================= */
+
+.dropdown-item:hover{
+    background-color: rgb(62,120,143);
+    color: white;
+}
+
+
+/* ================================================= */
+/* =================== CARRUSEL ==================== */
+/* ================================================= */
+
+
+/* ========================= */
+/* CONTENEDOR */
+/* ========================= */
+
+.carousel{
+    margin-bottom: 80px;
+}
+
+
+/* ========================= */
+/* IMAGENES */
+/* ========================= */
+
+.carousel-item img{
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* ========================= */
+/* TEXTO */
+/* ========================= */
+
+.fondo-texto{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: fit-content;
+    margin: auto;
+    color: white;
+}
+
+.fondo-texto h2{
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.fondo-texto p{
+    font-size: 15px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 300;
+}
+
+
+/* ================================================= */
+/* =============== SECCIONES PRINCIPALES =========== */
+/* ================================================= */
+
+
+/* ========================= */
+/* CONTENEDOR GENERAL */
+/* ========================= */
+
+#seccion-destinos,
+#info-viajes,
+#promociones,
+#testimonios{
+    width: 90%;
+    border-radius: 25px;
+    backdrop-filter: blur(6px);
+    scroll-margin-top: 120px;
+}
+
+
+/* ========================= */
+/* INFO Y PROMOS */
+/* ========================= */
+
+#info-viajes,
+#promociones{
+    margin: 80px auto;
+    padding: 40px;
+    background-color: rgba(255,255,255,0.12);
+}
+
+
+/* ========================= */
+/* DESTINOS */
+/* ========================= */
+
+#seccion-destinos{
+    margin: auto;
+    padding: 40px;
+    background-color: rgba(135,206,235,0.20);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.25);
+}
+
+
+/* ========================= */
+/* TESTIMONIOS */
+/* ========================= */
+
+#testimonios{
+    margin: 80px auto;
+    padding: 35px;
+    background-color: rgba(255,255,255,0.12);
+}
+
+
+/* ================================================= */
+/* ==================== TITULOS ==================== */
+/* ================================================= */
+
+
+/* ========================= */
+/* TITULOS GENERALES */
+/* ========================= */
+
+.info-titulo,
+.promociones-titulo,
+.testimonios-titulo{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+
+/* ========================= */
+/* ESPACIADOS */
+/* ========================= */
+
+.info-titulo{
+    margin-bottom: 40px;
+}
+
+.promociones-titulo{
+    margin-bottom: 15px;
+}
+
+.testimonios-titulo{
+    margin-bottom: 35px;
+}
+
+
+/* ========================= */
+/* TEXTO */
+/* ========================= */
+
+.promociones-texto{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+/* ================================================= */
+/* =================== DESTINOS ==================== */
+/* ================================================= */
+
+
+/* ========================= */
+/* TITULO */
+/* ========================= */
+
+.destinos-populares{
+    width: fit-content;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    padding: 15px 25px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+
+/* ========================= */
+/* TEXTO */
+/* ========================= */
+
+.destinos-populares .titulo{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.destinos-populares .texto{
+    font-size: 15px;
+    margin: 0;
+}
+
+
+/* ================================================= */
+/* ===================== CARDS ===================== */
+/* ================================================= */
+
+
+/* ========================= */
+/* CONTAINERS */
+/* ========================= */
+
+.container-cards,
+.info-container,
+.testimonios-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ========================= */
+/* FLEX */
+/* ========================= */
+
+.container-cards,
+.info-container{
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.card{
+    width: 18rem;
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+
+/* ========================= */
+/* HOVER */
+/* ========================= */
+
+.card:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.4);
+}
+
+
+/* ========================= */
+/* IMAGEN */
+/* ========================= */
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+/* ========================= */
+/* BODY */
+/* ========================= */
+
+.card-body{
+    text-align: center;
+    background-color: white;
+}
+
+.card-title{
+    margin-bottom: 10px;
+}
+
+.card-text{
+    margin-bottom: 15px;
+}
+
+
+/* ========================= */
+/* BOTON */
+/* ========================= */
+
+.btn-warning{
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 8px 15px;
+}
+
+
+/* ================================================= */
+/* ====================== MODALS =================== */
+/* ================================================= */
+
+
+/* ========================= */
+/* CONTENEDOR */
+/* ========================= */
+
+.modal-content{
+    background-color: rgba(173,216,230,0.95);
+    border-radius: 20px;
+    border: none;
+}
+
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.modal-header{
+    border: none;
+}
+
+
+/* ========================= */
+/* TITULO */
+/* ========================= */
+
+.modal-title{
+    color: rgb(33,33,33);
+}
+
+
+/* ========================= */
+/* BODY */
+/* ========================= */
+
+.modal-body{
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* ========================= */
+/* IMAGEN */
+/* ========================= */
+
+.modal-body img{
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+
+/* ========================= */
+/* TEXTO */
+/* ========================= */
+
+.modal-body p{
+    font-style: normal;
+    color: rgb(33,33,33);
+    line-height: 1.6;
+}
+
+
+/* ================================================= */
+/* ================== INFORMACION ================== */
+/* ================================================= */
+
+
+/* ========================= */
+/* BOX */
+/* ========================= */
+
+.info-box{
+    width: 250px;
+    padding: 25px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgba(135,206,235,0.25);
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+    color: white;
+}
+
+
+/* ========================= */
+/* HOVER */
+/* ========================= */
+
+.info-box:hover{
+    transform: translateY(-10px);
+}
+
+
+/* ========================= */
+/* IMAGEN */
+/* ========================= */
+
+.info-box img{
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+
+/* ================================================= */
+/* ================= PROMOCIONES =================== */
+/* ================================================= */
+
+
+/* ========================= */
+/* ACCORDION */
+/* ========================= */
+
+.accordion{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+/* ========================= */
+/* ITEM */
+/* ========================= */
+
+.accordion-item{
+    background-color: rgba(255,255,255,0.75);
+    border: none;
+    margin-bottom: 10px;
+}
+
+
+/* ========================= */
+/* BOTON */
+/* ========================= */
+
+.accordion-button{
+    background-color: rgba(255,255,255,0.85);
+    color: rgb(40,40,40);
+    font-weight: bold;
+}
+
+
+/* ================================================= */
+/* ================= TESTIMONIOS =================== */
+/* ================================================= */
+
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.testimonio-card{
+    width: 75%;
+    margin: auto;
+    padding: 22px 40px;
+    border-radius: 20px;
+    background-color: rgba(135,206,235,0.20);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    color: white;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* ========================= */
+/* TEXTO */
+/* ========================= */
+
+.testimonio-card p{
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+
+/* ========================= */
+/* NOMBRE */
+/* ========================= */
+
+.testimonio-card h4{
+    font-size: 18px;
+    margin: 0;
+}
+
+
+/* ================================================= */
+/* ===================== FOOTER ==================== */
+/* ================================================= */
+
+
+/* ========================= */
+/* CONTENEDOR GENERAL */
+/* ========================= */
+
+#empresa{
+    width: 100%;
+    margin-top: 90px;
+    padding: 55px 30px 20px;
+    background-color: rgba(45,55,72,0.88);
+    backdrop-filter: blur(10px);
+}
+
+.footer-contenido{
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+    background-color: rgba(255,255,255,0.08);
+    padding: 35px;
+    border-radius: 30px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.25);
+}
+
+
+/* ========================= */
+/* COLUMNAS */
+/* ========================= */
+
+.footer-columna{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ========================= */
+/* COLUMNA IZQUIERDA */
+/* ========================= */
+
+.footer-logo{
+    color: white;
+    font-size: 38px;
+    margin-bottom: 18px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.footer-texto{
+    color: white;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-style: normal;
+    max-width: 320px;
+}
+
+.footer-redes{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-redes a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+    width: fit-content;
+}
+
+.footer-redes a:hover{
+    color: #ffd166;
+    transform: translateX(6px);
+}
+
+
+/* ========================= */
+/* COLUMNA CENTRAL */
+/* ========================= */
+
+.footer-centro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-centro h3{
+    color: white;
+    margin-bottom: 12px;
+    font-size: 25px;
+}
+
+.footer-centro p{
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 18px;
+    font-style: normal;
+}
+
+.footer-centro iframe{
+    width: 100%;
+    max-width: 340px;
+    height: 230px;
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+
+
+/* ========================= */
+/* COLUMNA DERECHA */
+/* ========================= */
+
+.footer-formulario{
+    width: 100%;
+}
+
+.footer-formulario h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.footer-formulario p{
+    color: rgba(255,255,255,0.85);
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-style: normal;
+}
+
+.footer-formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-formulario input,
+.footer-formulario textarea{
+    border: none;
+    border-radius: 14px;
+    padding: 13px 16px;
+    outline: none;
+    font-family: "Inter", sans-serif;
+    background-color: rgba(255,255,255,0.92);
+}
+
+.footer-formulario textarea{
+    height: 90px;
+    resize: none;
+}
+
+.footer-formulario button{
+    border: none;
+    border-radius: 14px;
+    padding: 13px;
+    background-color: #ffd166;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer-formulario button:hover{
+    background-color: white;
+    transform: scale(1.02);
+}
+
+
+/* ========================= */
+/* FINAL */
+/* ========================= */
+
+.footer-linea{
+    width: 90%;
+    height: 1px;
+    background-color: rgba(255,255,255,0.25);
+    margin: 35px auto 18px;
+}
+
+.footer-final{
+    text-align: center;
+}
+
+.footer-final p{
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    font-style: normal;
+}
+
+
+/* ================================================= */
+/* =================== RESPONSIVE ================== */
+/* ================================================= */
+
+@media(max-width:950px){
+
+    .footer-contenido{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-columna{
+        align-items: center;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .carousel-item img{
+        height: 350px;
+    }
+
+    .navbar-brand{
+        font-size: 28px;
+    }
+
+    .testimonio-card{
+        width: 100%;
+    }
+
+    .footer-formulario{
+        width: 100%;
+    }
+
+}
+
+.popup{
+
+    position: fixed;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    background-color: #28a745;
+
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    z-index: 9999;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+    animation: aparecer 0.5s ease;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.popup.popup-error{
+    background-color: #dc3545;
+}
+
+.popup.hide{
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(0.95);
+}
+
+@keyframes aparecer{
+
+    from{
+        opacity: 0;
+        transform: translate(-50%,-60%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(-50%,-50%);
+    }
+
+}
+
+/* ============= ACCESO DENEGADO ============ */
+
+.acceso-denegado-texto{
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* ================= LOGIN ================= */
+
+.login-container{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding-top:170px;
+
+    padding-bottom:100px;
+
+}
+
+.login-box{
+
+    width:430px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
+
+.login-box h2{
+
+    text-align:center;
+
+    color:white;
+
+    margin-bottom:30px;
+
+}
+
+.login-box label{
+
+    color:white;
+
+    font-weight:600;
+
+}
+
+.login-box .form-control{
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:12px;
+
+}
+
+.login-box .btn{
+
+    border-radius:12px;
+
+    padding:12px;
+
+    font-weight:bold;
+
+}
+
+html{
+    height:100%;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+#empresa{
+    margin-top:auto;
+}
+
+/* ================================================= */
+/* ================= PANEL ADMIN =================== */
+/* ================================================= */
+
+
+/* ========================= */
+/* CONTENEDOR */
+/* ========================= */
+
+.admin-container{
+    width: 92%;
+    max-width: 1250px;
+    margin: auto;
+    padding: 170px 0 80px;
+}
+
+
+/* ========================= */
+/* PANEL */
+/* ========================= */
+
+.admin-panel{
+    background-color: rgba(255,255,255,0.94);
+    backdrop-filter: blur(10px);
+    border-radius: 28px;
+    padding: 35px 40px 40px;
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.30);
+}
+
+
+/* ================================================= */
+/* ================== ENCABEZADO =================== */
+/* ================================================= */
+
+.admin-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid rgba(62,120,143,0.15);
+}
+
+
+/* ========================= */
+/* TITULO */
+/* ========================= */
+
+.admin-titulo{
+    color: rgb(45,55,72);
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.admin-titulo i{
+    color: rgb(62,120,143);
+    margin-right: 10px;
+}
+
+
+/* ========================= */
+/* SUBTITULO */
+/* ========================= */
+
+.admin-subtitulo{
+    color: rgb(100,116,139);
+    font-size: 15px;
+    margin: 0;
+}
+
+.admin-subtitulo span{
+    color: rgb(62,120,143);
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/* ========================= */
+/* BOTON SALIR */
+/* ========================= */
+
+.btn-salir{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 50px;
+    border: 2px solid rgba(220,53,69,0.45);
+    color: #dc3545;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btn-salir:hover{
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+
+/* ================================================= */
+/* ==================== LAYOUT ===================== */
+/* ================================================= */
+
+.admin-layout{
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+    margin-top: 28px;
+}
+
+
+/* ================================================= */
+/* ================= FORMULARIO ==================== */
+/* ================================================= */
+
+.admin-form-card{
+    width: 360px;
+    flex-shrink: 0;
+    background-color: rgb(248,250,252);
+    border: 1px solid rgba(62,120,143,0.15);
+    border-radius: 22px;
+    padding: 26px;
+    position: sticky;
+    top: 30px;
+}
+
+
+/* ========================= */
+/* MODO EDICION */
+/* ========================= */
+
+.admin-form-editando{
+    background-color: rgba(255,209,102,0.12);
+    border-color: rgba(255,209,102,0.65);
+}
+
+
+/* ========================= */
+/* TITULO */
+/* ========================= */
+
+.admin-form-titulo{
+    color: rgb(45,55,72);
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+.admin-form-titulo i{
+    color: rgb(62,120,143);
+    margin-right: 8px;
+}
+
+.admin-form-editando .admin-form-titulo i{
+    color: #b07d00;
+}
+
+
+/* ========================= */
+/* CAMPOS */
+/* ========================= */
+
+.admin-campo{
+    margin-bottom: 18px;
+}
+
+.admin-campo label{
+    display: block;
+    color: rgb(45,55,72);
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.admin-campo input,
+.admin-campo textarea{
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid rgba(62,120,143,0.18);
+    border-radius: 14px;
+    background-color: white;
+    color: rgb(45,55,72);
+    outline: none;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.admin-campo textarea{
+    resize: none;
+    line-height: 1.6;
+}
+
+.admin-campo input:focus,
+.admin-campo textarea:focus{
+    border-color: rgb(62,120,143);
+    box-shadow: 0px 0px 0px 4px rgba(62,120,143,0.10);
+}
+
+
+/* ========================= */
+/* BOTONES */
+/* ========================= */
+
+.admin-form-botones{
+    display: flex;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.btn-guardar,
+.btn-cancelar{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-guardar{
+    flex: 1;
+    background-color: rgb(62,120,143);
+    color: white;
+    box-shadow: 0px 5px 15px rgba(62,120,143,0.35);
+}
+
+.btn-guardar:hover{
+    background-color: rgb(48,98,118);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-cancelar{
+    background-color: rgb(237,242,247);
+    color: rgb(100,116,139);
+}
+
+.btn-cancelar:hover{
+    background-color: rgb(226,232,240);
+    color: rgb(71,85,105);
+}
+
+
+/* ================================================= */
+/* ==================== LISTA ====================== */
+/* ================================================= */
+
+.admin-lista{
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* ========================= */
+/* BUSCADOR */
+/* ========================= */
+
+.admin-buscador{
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.admin-buscador i{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(148,163,184);
+}
+
+.admin-buscador input{
+    width: 100%;
+    padding: 12px 18px 12px 46px;
+    border: 2px solid rgba(62,120,143,0.18);
+    border-radius: 50px;
+    background-color: rgb(248,250,252);
+    color: rgb(45,55,72);
+    outline: none;
+    font-family: "Inter", sans-serif;
+    transition: 0.3s;
+}
+
+.admin-buscador input:focus{
+    border-color: rgb(62,120,143);
+    background-color: white;
+}
+
+
+/* ================================================= */
+/* ==================== TABLA ====================== */
+/* ================================================= */
+
+.admin-tabla-wrapper{
+    background-color: rgb(248,250,252);
+    border-radius: 20px;
+    overflow-x: auto;
+    border: 1px solid rgba(62,120,143,0.12);
+}
+
+.admin-tabla{
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 560px;
+}
+
+
+/* ========================= */
+/* CABECERA */
+/* ========================= */
+
+.admin-tabla thead th{
+    background-color: rgba(135,206,235,0.25);
+    color: rgb(45,55,72);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 15px 18px;
+    white-space: nowrap;
+}
+
+
+/* ========================= */
+/* FILAS */
+/* ========================= */
+
+.admin-tabla tbody tr{
+    border-bottom: 1px solid rgba(62,120,143,0.10);
+    transition: 0.25s;
+}
+
+.admin-tabla tbody tr:last-child{
+    border-bottom: none;
+}
+
+.admin-tabla tbody tr:hover{
+    background-color: rgba(135,206,235,0.14);
+}
+
+.admin-tabla td{
+    padding: 15px 18px;
+    color: rgb(71,85,105);
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+
+/* ========================= */
+/* CELDAS */
+/* ========================= */
+
+.admin-celda-id{
+    color: rgb(148,163,184) !important;
+    font-weight: 600;
+    font-size: 14px;
+    width: 60px;
+}
+
+.admin-celda-titulo{
+    color: rgb(45,55,72) !important;
+    font-weight: 600;
+    min-width: 180px;
+}
+
+.admin-celda-cuerpo{
+    line-height: 1.5;
+    max-width: 340px;
+}
+
+
+/* ========================= */
+/* ACCIONES */
+/* ========================= */
+
+.admin-celda-acciones{
+    white-space: nowrap;
+    width: 110px;
+}
+
+.admin-celda-acciones form{
+    display: inline-block;
+    margin: 0;
+}
+
+.btn-accion{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 12px;
+    margin-left: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-editar{
+    background-color: rgba(255,209,102,0.35);
+    color: #b07d00;
+}
+
+.btn-editar:hover{
+    background-color: #ffd166;
+    color: #7a5600;
+    transform: translateY(-2px);
+}
+
+.btn-borrar{
+    background-color: rgba(220,53,69,0.14);
+    color: #dc3545;
+}
+
+.btn-borrar:hover{
+    background-color: #dc3545;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+/* ========================= */
+/* ESTADO VACIO */
+/* ========================= */
+
+.admin-vacio{
+    text-align: center;
+    padding: 55px 20px;
+    color: rgb(148,163,184);
+}
+
+.admin-vacio i{
+    font-size: 55px;
+    color: rgba(62,120,143,0.35);
+    display: block;
+    margin-bottom: 15px;
+}
+
+.admin-vacio h5{
+    color: rgb(71,85,105);
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.admin-vacio p{
+    font-size: 15px;
+    margin: 0;
+}
+
+
+/* ================================================= */
+/* ============== RESPONSIVE ADMIN ================= */
+/* ================================================= */
+
+@media(max-width:992px){
+
+    .admin-layout{
+        flex-direction: column;
+    }
+
+    .admin-form-card{
+        width: 100%;
+        position: static;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .admin-container{
+        width: 95%;
+        padding-top: 140px;
+    }
+
+    .admin-panel{
+        padding: 25px 20px 30px;
+    }
+
+    .admin-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .admin-titulo{
+        font-size: 22px;
+    }
+
+}
