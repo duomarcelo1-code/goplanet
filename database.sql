@@ -28,9 +28,10 @@ CREATE TABLE `usuarios` (
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Usuario de prueba -> usuario: marcelo / password: 1234
+-- Usuarios de prueba -> password: 1234 en ambos casos
 INSERT INTO `usuarios` (`usuario`, `password`) VALUES
-('marcelo', '81dc9bdb52d04dc20036dbd8313ed055');
+('marcelo', '81dc9bdb52d04dc20036dbd8313ed055'),
+('flavia',  '81dc9bdb52d04dc20036dbd8313ed055');
 
 
 -- =====================================================
